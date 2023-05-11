@@ -1,0 +1,153 @@
+\documentclass[12pt]{amsart}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\pagenumbering{gobble}
+
+\title[]{Introduction to Line Integrals\\Math 32}
+\author[]{11/4/22}
+
+\begin{document}
+
+\phantom{x}
+\vspace{-0.5in}
+\maketitle
+
+All of the models today are scaled 1 inch $\approx$ 1 unit.  You may want to round everything to a few decimal places to make the computations easier.
+
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item
+What are the names of your classmates working on this with you?
+
+\vspace{0.5in}
+\item
+When is it appropriate to start playing Christmas music on the radio?
+
+\vspace{0.5in}
+\end{enumerate}
+\item
+You want to find the area of the figure whose height is given by $z=2+x^2y$ and whose base is the line segment $y=2x$ with $-1 \le x \le 1$.  (See Figure I).
+\begin{enumerate}
+\item
+We start by approximating the figure with 2 rectangles.  (See Figure II.)
+\begin{enumerate}
+\item
+The height of $A1$ is 4, since  at $(1,2)$, $z= 4$.  If we got the height of $A2$ from the height of the function at $(0,0)$, what is the height of $A2$?
+
+\vspace{.5in}
+\item
+What is the width of each rectangle? (Hint: use Pythagorean Theorem)
+
+\vspace{.5in}
+\item
+Add the areas of the two rectangles to approximate the desired area.
+
+\vspace{.5in}
+\end{enumerate}
+\item
+Now let's approximate the figure with 4 rectangles.  (See Figure III)
+\begin{enumerate}
+\item
+To find the height of each rectangle, we used the points $(-\frac12,-1), (0,0), (\frac12,1)$, and $(1,2)$.  What are the heights of each rectangle?
+
+\vspace{0.75in}
+\item
+What is the width of each rectangle?
+
+\vspace{.5in}
+\item
+What is the new approximation for the area?
+
+\end{enumerate}
+
+\newpage
+\item
+To find a better approximation for the area, we should use even more rectangles!  
+\begin{enumerate}
+\item
+A parametric equation for the line is $\langle t, 2t \rangle$, where $-1 \le t\le 1$.  If we use the point $(x,y)$ to get the height of our rectangles, what is the height of each rectangle with respect to $t$?
+
+\vspace{.5in}
+\item
+If we take points $\Delta t$ increments apart, what is the width of each rectangle?
+
+\vspace{.5in}
+
+\item
+Take a guess: what integral (with respect to $t$) would give you the area if we let $\Delta t \rightarrow 0$?
+\end{enumerate}
+\end{enumerate}
+
+
+\vspace{0.5in}
+
+\item
+Now, let's find the area of the figure whose height is given by $z= 2+x^2y$ and whose base is the semicircle $y=\sqrt{1-x^2}$.  (Figure IV)
+Let's parametrize the circle with 
+$$r(t) = \langle \cos t, \sin t \rangle, \; 0 \le t \le \pi$$
+\begin{enumerate}
+\item
+ Let's approximate the figure with 4 rectangles.  (See Figure V)  
+\begin{enumerate}
+\item
+What should the width of each rectangle be?  We want to think of the base of each rectangle as straight and not curved.
+
+\vspace{.5in}
+\item
+Based on $t$ (not $x$), I used a left-hand approximation and equally-sized spacings for $t$.  What is the height of each rectangle?
+
+\vspace{0.5in}
+\item
+What is the approximate area based on these 4 rectangles?
+
+\vspace{.5in}
+\end{enumerate}
+\item
+Set up an integral (with respect to $t$) to calculate the total area if we used infinitely many rectangles, and evaluate it.
+
+
+\end{enumerate}
+
+\newpage
+\item
+Let's do the same as the above, but using 
+$$\langle t, \sqrt{1-t^2} \rangle, \; -1 \le t \le 1$$
+for the circle.
+\begin{enumerate}
+\item
+Using equally spaced values for $t$ and a left-hand approximation, what is the height of each rectangle?
+
+\vspace{.5in}
+\item
+What is the width of each rectangle?  Note: they're not all the same size!
+
+\vspace{.5in}
+\item
+What is the approximation for the area given by these 4 rectangles?
+
+\vspace{.5in}
+\item
+Set up an integral (with respect to $t$) to calculate the total area if we used infinitely many rectangles, and evaluate it.
+
+\vspace{3in}
+\item
+Is your answer the same as (2)(b)?  (If not, it means you made a mistake.)
+
+\vspace{.35in}
+\end{enumerate}
+
+\item
+Can you think of a general formula: if you have a figure whose height is given by $z=f(x,y)$ and whose base is along a curve $r(t)= \langle x(t), y(t) \rangle$, $a \le t \le b$, what is its area?
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}
